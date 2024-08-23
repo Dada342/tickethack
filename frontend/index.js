@@ -30,7 +30,7 @@ document.querySelector('#search').addEventListener('click', function () {
   fetch(`https://tickethack-delta.vercel.app/search/${departure}/${arrival}/${date}`)
     .then(response => response.json())
     .then(data => {
-      console.log(data);
+      console.log('click');
       if (data.result) {
         document.querySelector('#results').innerHTML = '';
 
